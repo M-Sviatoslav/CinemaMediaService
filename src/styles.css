@@ -60,50 +60,28 @@ body{
 
 /*Slider*/
 
-.slider{
-  position: relative;
-  width: 80%;
-  max-width: 1000px;
-  overflow: hidden;
-}
 
-.slides{
+.slider-container {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: dimgrey;
 }
 
-.slide{
-  min-width: 100%;
-  box-sizing: border-box;
+.slider {
+  text-align: center;
 }
 
-.slide img{
-  width: 100%;
-  display: block;
+.slider-image {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
 }
 
-.sliderPrev{
-  position: absolute;
-  top: 50%;
-  transform:translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
+.slider-button {
+  margin: 0 20px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
-  z-index: 1000;
-  left: 10px;
-}
-
-.sliderNext{
-  position: absolute;
-  top: 50%;
-  transform:translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1000;
-  right: 10px;
 }
