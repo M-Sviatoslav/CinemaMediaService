@@ -3,10 +3,10 @@
 export default function Header (){
 
 const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
+  { name: "years in the industry", value: "5" },
+  { name: "Movies", value: "4000+" },
+  { name: "Serials", value: "2500+" },
+  { name: "Support all devices", value: "Availability" },
 ];
 
 
@@ -44,7 +44,7 @@ const stats = [
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Cinema SHOW
+            NOVA cinema
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             A new experience of viewing the latest projects from around the

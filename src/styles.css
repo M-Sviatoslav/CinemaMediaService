@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 .slider-container::before {
@@ -20,10 +20,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/Users/sviatoslavmatsishin/Desktop/JS/Cinema/reactproject/public/filmLogos/background-poster.jpg'); /* Your background image */
-  background-size: cover; 
+ background-color: rgb(30 41 59);
+  background-size: cover;
   background-position: center;
-  filter: blur(10px);
+
   z-index: 1;
 }
 
