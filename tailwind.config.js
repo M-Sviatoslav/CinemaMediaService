@@ -7,6 +7,9 @@ module.exports = {
       25: ".25",
       175: "1.75",
     },
+    translate: {
+      192 : "46rem",
+    },
   },
   plugins: [],
 };
