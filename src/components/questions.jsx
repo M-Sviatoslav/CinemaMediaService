@@ -16,7 +16,7 @@ export default function Questions() {
   ];
 
   return (
-    <div className="bg-slate-800 py-24 sm:py-32 flex flex-col justify-around items-center ">
+    <div className="bg-slate-950 py-24 sm:py-32 flex flex-col justify-around items-center">
       <h2 className="mb-12 text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">
         Frequently Asked Questions
       </h2>
@@ -33,7 +33,9 @@ export default function Questions() {
                 {faq.question}
               </h3>
               <svg
-                className={`transition-transform duration-300 ${activeIndex === index ? "rotate-45" : ""}`}
+                className={`transition-transform duration-300 ${
+                  activeIndex === index ? "rotate-45" : ""
+                }`}
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
                 viewBox="0 0 384 512"
@@ -46,12 +48,12 @@ export default function Questions() {
             </div>
             <div
               className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                activeIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                activeIndex === index
+                  ? "max-h-40 opacity-100"
+                  : "max-h-0 opacity-0"
               }`}
             >
-              <p className="mt-4 text-white">
-                {faq.answer}
-              </p>
+              <p className="mt-4 text-white">{faq.answer}</p>
             </div>
           </li>
         ))}

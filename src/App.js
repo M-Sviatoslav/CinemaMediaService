@@ -5,6 +5,7 @@ import Subscriptions from "./components/subscriptions";
 import Cards from "./components/cardsSection";
 import Questions from "./components/questions";
 import Footer from "./components/footer";
+import Registration from "./components/registration";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
          <Subscriptions/>
          <Cards/>
          <Questions/>
+         <Registration/>
          <Footer/>
     </div>
   );

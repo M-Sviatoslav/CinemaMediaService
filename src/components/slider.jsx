@@ -14,7 +14,7 @@ const FilmSlider = () => {
       alt: "Film 2",
     },
     {
-      src: "/filmLogos/Road_House_2024.jpg",
+      src: "/filmLogos/Challengers.jpg",
       alt: "Film 3",
     },
     {

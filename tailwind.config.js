@@ -8,7 +8,10 @@ module.exports = {
       175: "1.75",
     },
     translate: {
-      192 : "46rem",
+      192: "46rem",
+    },
+    boxShadow: {
+      "custom-white": "0 -20px 40px rgba(255, 255, 255, 1)",
     },
   },
   plugins: [],

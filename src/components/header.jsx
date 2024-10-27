@@ -1,22 +1,27 @@
-
-
-export default function Header (){
-
-const stats = [
-  { name: "years in the industry", value: "5" },
-  { name: "Movies", value: "4000+" },
-  { name: "Serials", value: "2500+" },
-  { name: "Support all devices", value: "Availability" },
-];
-
+export default function Header() {
+  const stats = [
+    { name: "years in the industry", value: "5" },
+    { name: "Movies", value: "4000+" },
+    { name: "Serials", value: "2500+" },
+    { name: "Support all devices", value: "Availability" },
+  ];
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
         alt=""
-        src="/filmLogos/background-poster.jpg"
+        src="/filmLogos/HeaderBackImg.jpg"
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center brightness-25"
       />
+
+      {/* <div
+        className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent)",
+          filter: "blur(8px)",
+        }}
+      /> */}
       <div
         aria-hidden="true"
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"

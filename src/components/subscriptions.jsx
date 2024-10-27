@@ -2,7 +2,7 @@
 
 export default function Subscriptions(){
   return (
-    <div class="bg-slate-800 py-24 sm:py-32">
+    <div class="bg-slate-950 py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl sm:text-center">
           <h2 class="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">
@@ -10,7 +10,7 @@ export default function Subscriptions(){
           </h2>
         </div>
         <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-          <div class="p-8 sm:p-10 lg:flex-auto bg-slate-800">
+          <div class="p-8 sm:p-10 lg:flex-auto bg-slate-950">
             <h3 class="text-2xl font-bold tracking-tight text-indigo-600">
               Universal subscription
             </h3>
@@ -90,8 +90,8 @@ export default function Subscriptions(){
               </li>
             </ul>
           </div>
-          <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0 bg-slate-800">
-            <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16 bg-slate-800">
+          <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0 bg-slate-950">
+            <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16 bg-slate-950">
               <div class="mx-auto max-w-xs px-8">
                 <p class="mt-6 flex items-baseline justify-center gap-x-2">
                   <span class="text-5xl font-bold tracking-tight text-slate-50">
