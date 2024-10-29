@@ -1,3 +1,6 @@
+import HeaderLangSelector from "./HeaderLanguage";
+import SignInBtn from "./SignInBtn";
+
 export default function Header() {
   const stats = [
     { name: "years in the industry", value: "5" },
@@ -45,6 +48,10 @@ export default function Header() {
           }}
           className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
         />
+      </div>
+      <div className="items-center flex basis-1/3 absolute top-5 right-5">
+        <HeaderLangSelector></HeaderLangSelector>
+        <SignInBtn></SignInBtn>
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
