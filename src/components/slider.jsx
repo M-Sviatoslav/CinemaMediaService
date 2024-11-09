@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 const FilmSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
