@@ -1,26 +1,27 @@
+import { useTranslation, Trans } from "react-i18next";
 
+export default function Subscriptions() {
+  const { i18n } = useTranslation();
 
-export default function Subscriptions(){
   return (
     <div class="bg-slate-950 py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl sm:text-center">
           <h2 class="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">
-            One subscription - a sea of content
+            <Trans i18nKey="subscribition.SubsBlockTitle"></Trans>
           </h2>
         </div>
         <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div class="p-8 sm:p-10 lg:flex-auto bg-slate-950">
             <h3 class="text-2xl font-bold tracking-tight text-indigo-600">
-              Universal subscription
+              <Trans i18nKey="subscribition.SubsTitle"></Trans>
             </h3>
             <p class="mt-6 text-base leading-7 text-white">
-              Access to all possible content, as well as unlimited access to
-              purchased products
+              <Trans i18nKey="subscribition.SubsDiscription"></Trans>
             </p>
             <div class="mt-10 flex items-center gap-x-4">
               <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">
-                What’s included
+                <Trans i18nKey="subscribition.ListTitle"></Trans>
               </h4>
               <div class="h-px flex-auto bg-gray-100"></div>
             </div>
@@ -41,7 +42,7 @@ export default function Subscriptions(){
                     clip-rule="evenodd"
                   />
                 </svg>
-                All movies
+                <Trans i18nKey="subscribition.ListEl1"></Trans>
               </li>
               <li class="flex gap-x-3 text-white">
                 <svg
@@ -56,7 +57,7 @@ export default function Subscriptions(){
                     clip-rule="evenodd"
                   />
                 </svg>
-                All serials
+                <Trans i18nKey="subscribition.ListEl2"></Trans>
               </li>
               <li class="flex gap-x-3 text-white">
                 <svg
@@ -71,7 +72,7 @@ export default function Subscriptions(){
                     clip-rule="evenodd"
                   />
                 </svg>
-                Personal library
+                <Trans i18nKey="subscribition.ListEl3"></Trans>
               </li>
               <li class="flex gap-x-3 text-white">
                 <svg
@@ -86,7 +87,7 @@ export default function Subscriptions(){
                     clip-rule="evenodd"
                   />
                 </svg>
-                Individual selections
+                <Trans i18nKey="subscribition.ListEl4"></Trans>
               </li>
             </ul>
           </div>
@@ -105,10 +106,10 @@ export default function Subscriptions(){
                   href="#"
                   class="mt-10 block w-full rounded-md bg-slate-100 px-3 py-2 text-center text-sm font-semibold text-slate-800 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Get access
+                  <Trans i18nKey="subscribition.SubsBtnText"></Trans>
                 </a>
                 <p class="mt-6 text-xs leading-5 text-white">
-                  The subscription is monthly
+                  <Trans i18nKey="subscribition.SubsBtnDescription"></Trans>
                 </p>
               </div>
             </div>

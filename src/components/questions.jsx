@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation, Trans } from "react-i18next";
 
 export default function Questions() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -7,18 +8,35 @@ export default function Questions() {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
+  const { i18n } = useTranslation();
+
   const faqs = [
-    { question: "What is NOVA?", answer: "NOVA is a streaming service offering various movies and shows." },
-    { question: "Where can I watch?", answer: "You can watch on any device that supports streaming." },
-    { question: "What can I watch on NOVA?", answer: "NOVA offers a variety of shows and movies across genres." },
-    { question: "How much does NOVA cost?", answer: "NOVA costs $19 per month." },
-    { question: "How do I cancel?", answer: "You can cancel anytime by visiting your account settings." }
+    {
+      question: <Trans i18nKey="questionsblock.q1Main"></Trans>,
+      answer: <Trans i18nKey="questionsblock.q1Answ"></Trans>,
+    },
+    {
+      question: <Trans i18nKey="questionsblock.q2Main"></Trans>,
+      answer: <Trans i18nKey="questionsblock.q2Answ"></Trans>,
+    },
+    {
+      question: <Trans i18nKey="questionsblock.q3Main"></Trans>,
+      answer: <Trans i18nKey="questionsblock.q3Answ"></Trans>,
+    },
+    {
+      question: <Trans i18nKey="questionsblock.q4Main"></Trans>,
+      answer: <Trans i18nKey="questionsblock.q4Answ"></Trans>,
+    },
+    {
+      question: <Trans i18nKey="questionsblock.q5Main"></Trans>,
+      answer: <Trans i18nKey="questionsblock.q5Answ"></Trans>,
+    },
   ];
 
   return (
     <div className="bg-slate-950 py-24 sm:py-32 flex flex-col justify-around items-center">
       <h2 className="mb-12 text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">
-        Frequently Asked Questions
+        <Trans i18nKey="questionsblock.questionsTitle"></Trans>
       </h2>
       <ul className="flex flex-col items-center justify-center mx-auto w-full md:w-3/4">
         {faqs.map((faq, index) => (

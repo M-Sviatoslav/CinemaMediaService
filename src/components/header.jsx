@@ -1,13 +1,16 @@
 import HeaderLangSelector from "./HeaderLanguage";
 import SignInBtn from "./SignInBtn";
+import { useTranslation, Trans } from "react-i18next";
 
 export default function Header() {
   const stats = [
-    { name: "years in the industry", value: "5" },
-    { name: "Movies", value: "4000+" },
-    { name: "Serials", value: "2500+" },
-    { name: "Support all devices", value: "Availability" },
+    { name: <Trans i18nKey="header.stat1"></Trans>, value: "5" },
+    { name: <Trans i18nKey="header.stat2"></Trans>, value: "4000+" },
+    { name: <Trans i18nKey="header.stat3"></Trans>, value: "2500+" },
+    { name: <Trans i18nKey="header.stat4"></Trans>, value: "Availability" },
   ];
+
+   const { i18n } = useTranslation();
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
@@ -17,14 +20,6 @@ export default function Header() {
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center brightness-25"
       />
 
-      {/* <div
-        className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent)",
-          filter: "blur(8px)",
-        }}
-      /> */}
       <div
         aria-hidden="true"
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -59,8 +54,7 @@ export default function Header() {
             NOVA cinema
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            A new experience of viewing the latest projects from around the
-            world.
+            <Trans i18nKey="header.description"></Trans>
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
