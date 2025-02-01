@@ -66,7 +66,7 @@ i18n
             q4Main: "How much does NOVA cost?",
             q4Answ: "NOVA costs $19 per month.",
             q5Main: "How do I cancel?",
-            g5Answ: "You can cancel anytime by visiting your account settings.",
+            q5Answ: "You can cancel anytime by visiting your account settings.",
           },
           registration: {
             Title:
